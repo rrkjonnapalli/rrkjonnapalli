@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { LucideAngularModule } from 'lucide-angular';
-import { NzButtonModule } from 'ng-zorro-antd/button';
+// import { LucideAngularModule } from 'lucide-angular';
+// import { NzButtonModule } from 'ng-zorro-antd/button';
 import { CompanyComponent } from '../company/company.component';
 import * as _ from 'lodash';
 import { Router } from '@angular/router';
@@ -10,8 +10,6 @@ import { Router } from '@angular/router';
   selector: 'app-portfolio',
   standalone: true,
   imports: [
-    LucideAngularModule,
-    NzButtonModule,
     CommonModule,
     CompanyComponent
   ],
@@ -27,7 +25,7 @@ export class PortfolioComponent {
 
   introlist = [
     'Senior Software Engineer (MEAN) at Cameo Global Hyderabad.',
-    '5+ Years of experience on MEAN stack technologies (Backend heavy).',
+    '6+ Years of experience on MEAN stack technologies (Backend heavy).',
     'Skilled in analyzing features, designing impactful solutions, and optimizing existing product problems.',
     'Excellent debugging skills for solving complex issues.'
   ].map((text, i) => ({ text, id: i + 1, bold: i === 0 }));
@@ -40,7 +38,7 @@ export class PortfolioComponent {
 
   linkedIn = 'https://www.linkedin.com/in/rrkjonnapalli';
   github = 'https://github.com/rrkjonnapalli';
-  myProjects = ['apps'];
+  myProjects = 'https://rrkjonnapalli.github.io/elit'; // ['apps'];
 
   skills = [
     'Node.js',
@@ -216,7 +214,7 @@ export class PortfolioComponent {
   }
 
   education = [
-    'Completed B.Tech(CS) in 2018 from IIIT(RGUKT) Nuzvid.'
+    'Completed B.Tech(CS) with (7.7 / 10) in 2018 from IIIT(RGUKT) Nuzvid.'
   ].map((text, i) => ({ text, id: i + 1, bold: i === 0 }));
 
 

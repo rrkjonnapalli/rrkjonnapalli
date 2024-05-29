@@ -4,6 +4,7 @@
     <div class="c0 with-sub-head">
       <div class="c1 bg-black">
         <div class="head-title w-100 text-right">{{title.firstname}} &nbsp;</div>
+        <div class="c1 summary-top">
         <div class="c2">
           <ul class="intro-list w-100">
             @for (item of introlist; track item.id) {
@@ -19,10 +20,14 @@
         </div>
         <div class="c2 show-block">
           <div class="avatar bg-white">
-            Ravi
+            <span>
+              <b>
+                J.R.Ravikiran
+              </b>
+            </span>
           </div>
           <div class="links">
-            <button nz-button nzType="primary" class="link-btn" nzSize="small" (click)="gotoLink(linkedIn)">
+            <button class="link-btn" (click)="gotoLink(linkedIn)">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-linkedin">
@@ -32,7 +37,7 @@
               </svg>
               &nbsp; <b>Linked In</b>
             </button>
-            <button nz-button nzType="primary" class="link-btn" nzSize="small" (click)="gotoLink(github)">
+            <button class="link-btn" (click)="gotoLink(github)">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-github">
@@ -42,10 +47,15 @@
               </svg>
               &nbsp; <b>Git</b>
             </button>
-            <button nz-button nzType="primary" class="link-btn" nzSize="small" (click)="gotoLink(myProjects, '_self')">
-              <b>Projects</b>
+            <button class="link-btn" (click)="gotoLink(myProjects)">
+              <!-- _self -->
+              <b>Apps</b>
             </button>
           </div>
+        </div>
+        </div>
+        <div class="c2 summary-contact">
+          <div class="sub-title">Contact me</div>
           <div class="w-100 info-block">
             <ul class="intro-list list-none w-100">
               @for(item of infolist; track item.id) {
@@ -60,7 +70,7 @@
       <div class="c1 bg-white">
         <div class="head-title left-head">{{title.lastname}}</div>
 
-        <div class="c3 ml-1 w-50  after-head">
+        <div class="c3 ml-1 w-80  after-head">
           <div class="sub-title">Skills</div>
           <div class="skill-list">
             @for (item of skills; track item.id) {
