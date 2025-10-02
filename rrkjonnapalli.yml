@@ -10,6 +10,17 @@ mobile: +919494124972
 email: r.ravikiranjonnapalli@gmail.com
 website: https://rrkjonnapalli.framer.website
 dp: assets/rrkjonnapalli.png
+skills:
+  - Node.js
+  - MongoDB
+  - Express
+  - Angular
+  - Git
+  - React
+  - Docker
+  - Python
+  - Kafka
+  - Apache Nifi
 summary:
   - Senior Software Engineer with 7+ years of experience in MEAN stack and full-stack development.
   - Proven expertise in system optimization, API design, and large-scale integrations.
